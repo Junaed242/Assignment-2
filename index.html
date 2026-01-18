@@ -5,12 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./tailwind.css">
+    <link rel="stylesheet" href="./tailwind.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>TechWave | The Ultimate Tech Podcast Experience</title>
   </head>
   <body>
     <header>
+      <nav
+        class="flex items-center justify-between px-5 py-4 bg-[#1a0b2e] text-white lg:px-30"
+      >
+        <div class="text-2xl font-bold">
+          Tech<span
+            class="text-transparent bg-clip-text bg-linear-to-r from-[#f7e93f] via-[#fb09b4] to-[#9100f8]"
+            >Wave</span
+          >
+        </div>
 
+        <ul
+          class="hidden items-center space-x-8 text-gray-300 font-medium lg:flex"
+        >
+          <li>
+            <a
+              href="#about"
+              class="hover:text-white transition-colors duration-300"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#episodes"
+              class="hover:text-white transition-colors duration-300"
+              >Episodes</a
+            >
+          </li>
+          <li>
+            <a
+              href="#host"
+              class="hover:text-white transition-colors duration-300"
+              >Host</a
+            >
+          </li>
+        </ul>
+
+        <div class="flex items-center">
+          <button
+            class="hidden lg:flex font-semibold items-center gap-1 bg-linear-to-r from-[#f7e93f] via-[#fb09b4] to-[#9100f8] px-4 py-3 rounded-full text-white hover:scale-105 active:scale-95 transition-all duration-300"
+          >
+            Subscribe
+            <img src="./assets/ArrowRight.png" alt="" class="w-5 h-5" />
+          </button>
+
+          <div class="lg:hidden">
+            <img src="./assets/hamburger-menu.png" alt="Menu" class="w-6 h-6" />
+          </div>
+        </div>
+      </nav>
+      
     </header>
   </body>
 </html>
